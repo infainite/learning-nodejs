@@ -2,9 +2,7 @@
 
 From [Official Website](https://nodejs.dev/en/learn)
 
-## Notes  
-
-# Getting Started  
+## Getting Started  
 
 - Open Source Cross Platform JavaScript Runtime Environment
 - Runs on V8 JavaScript engine (core of Google Chrome) outside of a browser
