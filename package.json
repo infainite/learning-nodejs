@@ -4,7 +4,7 @@
   "description": "Learning NodeJS from official tutorial",
   "main": "index.js",
   "scripts": {
-    "test": "node index.js"
+    "test": "npx tsc index.ts && node index.js"
   },
   "repository": {
     "type": "git",

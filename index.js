@@ -7,5 +7,5 @@ var server = http.createServer(function (req, res) {
     res.end('Hello, World.');
 });
 server.listen(port, hostname, function () {
-    console.log("Server listening at https://".concat(hostname, ":").concat(port, "/"));
+    console.log("Server listening at http://".concat(hostname, ":").concat(port, "/"));
 });
