@@ -43,10 +43,22 @@ From [Official Website](https://nodejs.dev/en/learn)
 - `fs.stat` is an asynchronous method used to get the stats of a file
 - The `path` module handles the file paths in NodeJS
 - `fs.open` is used to open file descriptors in different modes (`r`, `w`, `a`, etc)
-- `fs.exists` checks if a folder exists
-- `fs.access` checks if a folder exists and NodeJS has the permissions to access it
-- `fs.mkdir` makes a folder
+- `fs.exists` checks if a directory exists
+- `fs.access` checks if a directory exists and NodeJS has the permissions to access it
+- `fs.mkdir` makes a directory
 - `fs.readdir` reads the content of a directory
 - `fs.rename` renames a directory
 - `fs.rmdir` removes a directory, use `fs.rm` with option `{ recursive: true }` to remove a directory which is not empty
+
+## Command Line
+
+- Use `node app.js` to run `app.js` using NodeJS
+- You can also add a shebang line to the top of your JavaScript file, `#!/usr/bin/node` or `#!/usr/bin/env node`
+- To execute a string argument using node you can pass it with the flg `-e`, like this: `node -e "console.log(57)"
+- To restart the application automatically when there is a change in the files, use nodemon. Install it using `npm -i --save-dev nodemon` and then run `nodemon app.js`
+- `USER_ID=234 USER_KEY=abc node app.js` will set the environment variables `USER_ID` and `USER_KEY` which can be then accessed by using `process.env.USER_ID` and `process.env.USER_KEY`. In a production setting you should not pass environment variables like this, instead you should use `.env` files or export environment variables using a bash script etc
+- Using the `node` command without any file will enter us into the NodeJS REPL mode
+- `console.log` and many similar commands exist to output data to the command line
+- `progress` module can be used to create a progress bar in the command line
+- `inquirer` is an excellent library to work with CLI inputs
 
