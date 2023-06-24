@@ -36,3 +36,17 @@ From [Official Website](https://nodejs.dev/en/learn)
  - `setTimeout` or `setImmediate` adds a function to `microtask queue`
  - NodeJS event loop first executes `process.nextTick queue` then `promise mircotask queue` and then finally `microtask queue`
 - The NodeJS `events` module provides the `EvenEmitter` class which can be used to handle events
+
+## Manipulating Files  
+
+- The `fs` module is the file system module of NodeJS
+- `fs.stat` is an asynchronous method used to get the stats of a file
+- The `path` module handles the file paths in NodeJS
+- `fs.open` is used to open file descriptors in different modes (`r`, `w`, `a`, etc)
+- `fs.exists` checks if a folder exists
+- `fs.access` checks if a folder exists and NodeJS has the permissions to access it
+- `fs.mkdir` makes a folder
+- `fs.readdir` reads the content of a directory
+- `fs.rename` renames a directory
+- `fs.rmdir` removes a directory, use `fs.rm` with option `{ recursive: true }` to remove a directory which is not empty
+
